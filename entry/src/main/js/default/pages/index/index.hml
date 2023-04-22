@@ -1,0 +1,26 @@
+<stack class="container">
+    <list class="displayer-container">
+        <list-item class="container"
+                   style="height: {{ calc_displayerHeight() }};"
+                   @click="changeDisplay">
+            <stack class="displayer"
+                   style="height: {{ calc_displayerHeight() }}; background-color: {{ calc_displayerBg() }};">
+                <text class="displayer">
+                    {{ calc_display() }}
+                </text>
+            </stack>
+        </list-item>
+    </list>
+    <div class="keyboard">
+        <swiper class="container">
+            <div for="{{ keyPages }}" class="keyrow-container">
+                <div for="{{ $item }}" class="keyrow">
+                    <input for="{{ $item }}" class="key" type="button"
+                           style="background-color: {{ calc_keyBg($item) }};"
+                           value="{{ $item }}"
+                           @click="key({{ $item }})"></input>
+                </div>
+            </div>
+        </swiper>
+    </div>
+</stack>

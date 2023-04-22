@@ -1,0 +1,41 @@
+.container {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.displayer-container {
+    width: 100%;
+    height: 50%;
+}
+.displayer {
+    width: 100%;
+    padding: 10px;
+    color: white;
+}
+
+.keyboard {
+    flex-direction: column;
+    top: 50%;
+    width: 100%;
+    height: 48%;
+    padding-top: 10px;
+}
+.keyrow-container {
+    width: 100%;
+    height: 100%;
+    flex-direction: column;
+}
+.keyrow {
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 24%;
+}
+.key {
+    width: 16.67%;
+    height: 100%;
+    border-radius: 7px;
+    color: white;
+}
